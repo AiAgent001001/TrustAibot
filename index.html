@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeAI — Твой ИИ-агент для трейдинга</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4/web3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="background-plexus"></div>
+    <div class="neural-network"></div>
+
+    <section id="main-page" class="hero">
+        <div class="hero-background">
+            <div class="hero-lines"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="holographic">Я TradeAI — Ваш Супер ИИ-Агент для Трейдинга</h1>
+            <p class="hero-subtitle">
+                Привет, я TradeAI, созданный на базе передового искусственного интеллекта! Я анализирую рынки, слежу за китами и торгую за тебя 24/7, чтобы ты мог получать прибыль. Подключи кошелёк, и я начну — первые 3 дня бесплатно!
+            </p>
+            <button id="connect-wallet" class="neon-button">Подключить кошелёк и начать</button>
+        </div>
+    </section>
+
+    <section class="animated-section advantages">
+        <h2 class="holographic-3d">Почему я твой идеальный партнёр</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Молниеносный анализ</h3>
+                <p>Я вижу новости и посты в X в первые секунды, реагируя быстрее любого трейдера.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔍</div>
+                <h3>Ончейн-анализ</h3>
+                <p>Я отслеживаю китов на BNB Chain, Solana, Polygon и других блокчейнах.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🧠</div>
+                <h3>ИИ-прогнозы</h3>
+                <p>Я использую машинное обучение для точных прогнозов цен и арбитражных сделок.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔒</div>
+                <h3>Безопасность</h3>
+                <p>Ты всегда контролируешь свой кошелёк, а я работаю через него.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="animated-section how-it-works">
+        <h2 class="holographic-3d">Как я начну работать для тебя</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Подключи кошелёк</h3>
+                <p>Я работаю с Trust Wallet — это займёт пару секунд.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Настрой мои параметры</h3>
+                <p>Выбери стратегию и сумму, с которой я начну торговать.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Запусти меня</h3>
+                <p>Я начну анализировать рынок и торговать за тебя 24/7.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Получай прибыль</h3>
+                <p>Следи за моими сделками и ростом твоего капитала в реальном времени.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="animated-section features">
+        <h2 class="holographic-3d">Мои суперспособности</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Передовые технологии</h3>
+                <p>Я использую ИИ и ончейн-анализ для твоей прибыли.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>Кросс-чейн анализ</h3>
+                <p>Я мониторю несколько блокчейнов для лучших сделок.</p>
+            </div>
+            <div class="card">
+                <div class="icon">⏰</div>
+                <h3>Торговля 24/7</h3>
+                <p>Я работаю без перерывов, пока ты отдыхаешь.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📞</div>
+                <h3>Уведомления</h3>
+                <p>Я отправлю сигналы в Telegram, Discord или email.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="animated-section cta">
+        <h2 class="holographic-3d">Давай зарабатывать вместе!</h2>
+        <p>Я, TradeAI, готов вывести твою торговлю на новый уровень. Подключи кошелёк, и я начну работать для тебя!</p>
+        <button id="connect-wallet-cta" class="neon-button">Начать прямо сейчас</button>
+    </section>
+
+    <section class="animated-section faq">
+        <h2 class="holographic-3d">Ответы на твои вопросы</h2>
+        <div class="faq-items">
+            <div class="faq-item">
+                <h3>Мои средства в безопасности?</h3>
+                <p>Да, ты полностью контролируешь свой кошелёк.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Нужен ли мне опыт в трейдинге?</h3>
+                <p>Нет, я всё сделаю за тебя.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Какие активы я поддерживаю?</h3>
+                <p>Я работаю с Bitcoin, BNB, Solana и сотнями других монет.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="neon-line"></div>
+        <p>TradeAI — твой ИИ-агент для трейдинга. Я создан, чтобы приносить тебе прибыль!</p>
+    </footer>
+
+    <section id="dashboard" style="display: none;">
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <h2 class="holographic-3d">TradeAI — Твой центр управления</h2>
+                <p>Следи за моими сделками и управляй настройками.</p>
+            </div>
+            <div class="dashboard-content">
+                <div class="overview-panel">
+                    <div class="overview-section">
+                        <h3>Баланс</h3>
+                        <div class="overview-card">
+                            <p id="balance">0 USDT</p>
+                        </div>
+                    </div>
+                    <div class="overview-section">
+                        <h3>Прибыль</h3>
+                        <div class="overview-card">
+                            <p id="profit">0 USDT</p>
+                        </div>
+                    </div>
+                    <div class="overview-section">
+                        <h3>Сделки</h3>
+                        <div class="overview-card">
+                            <p id="trades">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-panel">
+                    <div class="control-status">
+                        <h3>Статус</h3>
+                        <div class="status-card">
+                            <p id="bot-status">Ожидаю твоей команды</p>
+                            <canvas id="plexus-canvas"></canvas>
+                            <div id="progress-bar" class="neon-progress"></div>
+                        </div>
+                    </div>
+                    <div class="control-settings">
+                        <h3>Управление</h3>
+                        <div class="form">
+                            <div class="input-group">
+                                <label for="strategy">Стратегия</label>
+                                <div class="strategy-options">
+                                    <div class="strategy-card" data-strategy="aggressive">
+                                        <div class="strategy-icon">⚡</div>
+                                        <h4>Агрессивная</h4>
+                                    </div>
+                                    <div class="strategy-card selected" data-strategy="balanced">
+                                        <div class="strategy-icon">⚖️</div>
+                                        <h4>Сбалансированная</h4>
+                                    </div>
+                                    <div class="strategy-card" data-strategy="conservative">
+                                        <div class="strategy-icon">🛡️</div>
+                                        <h4>Консервативная</h4>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="strategy" value="balanced">
+                            </div>
+                            <div class="input-group">
+                                <label for="trade-amount">Сумма (USDT)</label>
+                                <input type="number" id="trade-amount" placeholder="Введите сумму">
+                            </div>
+                            <div class="input-group">
+                                <label for="trade-type">Тип торговли</label>
+                                <select id="trade-type">
+                                    <option value="spot">Спотовая</option>
+                                    <option value="futures">Фьючерсная</option>
+                                </select>
+                            </div>
+                            <div class="button-group">
+                                <button id="start-bot" class="neon-button">Я готов! Нажми, чтобы запустить меня.</button>
+                                <p id="start-bot-hint" class="cosmic-text">Запустить</p>
+                                <button id="stop-bot-btn" class="neon-button" style="display: none;">Остановить</button>
+                                <button id="restart-bot-btn" class="neon-button" style="display: none;">Перезапустить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="log-panel">
+                    <h3>Мои действия</h3>
+                    <div id="log-messages"></div>
+                </div>
+                <div class="withdraw-panel">
+                    <h3>Вывод</h3>
+                    <div class="withdraw-form">
+                        <input type="text" id="withdraw-address" placeholder="Адрес кошелька">
+                        <button id="withdraw-btn" class="neon-button">Вывести</button>
+                    </div>
+                    <div id="withdraw-status" style="display: none;">
+                        <p id="withdraw-amount">Сумма: 0 USDT</p>
+                        <p id="withdraw-state">Статус: В обработке</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="connect-wallet-popup" class="popup" style="display: none;">
+        <div class="popup-content floating-neon">
+            <div class="popup-header">
+                <span class="popup-icon">🔗</span>
+                <h3>Подключение кошелька</h3>
+            </div>
+            <p id="connect-message" class="cosmic-text">
+                Привет! Я TradeAI, твой ИИ-помощник. Давай подключим твой кошелёк Trust Wallet, чтобы я мог начать торговать за тебя. Это безопасно и займёт пару секунд!
+            </p>
+            <div id="connect-buttons" class="popup-buttons">
+                <button id="connect-wallet-confirm" class="neon-button">Подтвердить</button>
+                <button id="connect-wallet-cancel" class="neon-button">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="popup" style="display: none;">
+        <div class="popup-content floating-neon">
+            <div class="popup-header">
+                <span class="popup-icon">📢</span>
+                <h3>Сообщение от TradeAI</h3>
+            </div>
+            <p id="notification-message" class="cosmic-text"></p>
+            <div class="popup-buttons">
+                <button id="notification-close" class="neon-button">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="waiting-popup" class="popup" style="display: none;">
+        <div class="popup-content floating-neon">
+            <div class="popup-header">
+                <span class="popup-icon">⏳</span>
+                <h3>Я работаю...</h3>
+            </div>
+            <p class="cosmic-text">Выполняю операцию... Пожалуйста, подожди.</p>
+            <div class="popup-buttons">
+                <button id="cancel-tx-btn" class="neon-button">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="bnb-confirmation" class="popup" style="display: none;">
+        <div class="popup-content floating-neon">
+            <div class="popup-header">
+                <span class="popup-icon">💸</span>
+                <h3>Нужна оплата газа</h3>
+            </div>
+            <p class="cosmic-text">
+                Для начала торгов мне нужно оплатить небольшую комиссию за газ на BNB Chain. Это стандартный шаг, чтобы я мог выполнять сделки за тебя. Подтверди, и я приступлю к работе!
+            </p>
+            <div class="popup-buttons">
+                <button id="approve-bnb-btn" class="neon-button">Подтвердить</button>
+                <button id="cancel-bnb-btn" class="neon-button">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-instruction-popup" class="popup" style="display: none;">
+        <div class="popup-content floating-neon">
+            <div class="popup-header">
+                <span class="popup-icon">📱</span>
+                <h3>Подключение через Trust Wallet</h3>
+            </div>
+            <p class="cosmic-text">
+                Чтобы подключить кошелёк Trust Wallet и начать торговлю, выполни следующие шаги:
+            </p>
+            <div class="instruction-step">
+                <div class="step-number">1</div>
+                <p>Открой Trust Wallet на своём устройстве.</p>
+            </div>
+            <div class="instruction-step">
+                <div class="step-number">2</div>
+                <p>Перейди в браузер Trust Wallet и вставь URL: <strong>https://aitrade.bot</strong></p>
+            </div>
+            <div class="instruction-step">
+                <div class="step-number">3</div>
+                <p>Подключи кошелёк на сайте и начни торговлю!</p>
+            </div>
+            <div class="popup-buttons">
+                <button id="copy-url-btn" class="neon-button">Скопировать URL</button>
+                <button id="open-wallet-btn" class="neon-button">Открыть Trust Wallet</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="install-wallet-popup" class="popup" style="display: none;">
+        <div class="popup-content floating-neon">
+            <div class="popup-header">
+                <span class="popup-icon">📱</span>
+                <h3>Установите Trust Wallet</h3>
+            </div>
+            <p class="cosmic-text">
+                Похоже, Trust Wallet не установлен на вашем устройстве. Чтобы начать торговлю с TradeAI, установите Trust Wallet из официального магазина приложений и вернитесь на сайт.
+            </p>
+            <div class="instruction-step">
+                <div class="step-number">1</div>
+                <p>Скачайте Trust Wallet:</p>
+            </div>
+            <div class="popup-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp" target="_blank" class="neon-button">Google Play</a>
+                <a href="https://apps.apple.com/app/trust-crypto-bitcoin-wallet/id1288339409" target="_blank" class="neon-button">App Store</a>
+            </div>
+            <div class="instruction-step">
+                <div class="step-number">2</div>
+                <p>После установки откройте Trust Wallet, перейдите в браузер и вставьте URL: <strong>https://aitrade.bot</strong></p>
+            </div>
+            <div class="popup-buttons">
+                <button id="copy-install-url-btn" class="neon-button">Скопировать URL</button>
+                <button id="install-close-btn" class="neon-button">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
